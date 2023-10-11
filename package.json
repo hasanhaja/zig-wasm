@@ -1,0 +1,15 @@
+{
+  "name": "zig-wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "cd packages/zig-math && ./compile.sh",
+    "prep": "cd packages/web && ./prep.sh",
+    "build": "pnpm run compile && pnpm run prep",
+    "serve": "pnpm run build && pnpm dlx serve packages/web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

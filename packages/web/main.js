@@ -4,10 +4,7 @@ const addOutput = document.getElementById("add-output");
 const multiplyButton = document.getElementById("multiply");
 const multiplyOutput = document.getElementById("multiply-output");
 
-const wasm = await fetch("assets/main.wasm");
-const bytes = await wasm.arrayBuffer();
-
-const result = await WebAssembly.instantiate(bytes);
+const result = await WebAssembly.instantiateStreaming(fetch("assets/main.wasm"));
 const add = result.instance.exports.add;
 const multiply = result.instance.exports.multiply;
 

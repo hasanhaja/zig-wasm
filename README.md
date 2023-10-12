@@ -6,11 +6,11 @@ This is a playground project to test Zig's WASM output. I've tried some Rust WAS
 
 - [x] Simple math functions in Zig 
 - [x] Explore making the WASM binary as small as possible
-- [ ] Implement fibonacci using this [tutorial](https://enarx.dev/docs/webassembly/zig)
+- [x] Implement fibonacci using this [tutorial](https://enarx.dev/docs/webassembly/zig)
 - [ ] What is WASI?
 - [ ] Allocator specific to WASM: Heap vs [WasmAllocator](https://ziglang.org/documentation/master/std/#A;std:heap.WasmAllocator)
 - [ ] Compare performance differences with the different `-O` zig output modes
-- [ ] `extern` function in Zig 
+- [x] `extern` function in Zig 
 - [ ] Load and execute WASM functions in a web worker
 - [ ] Game of life
 
